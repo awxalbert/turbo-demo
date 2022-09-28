@@ -1,0 +1,8 @@
+schema: 'src/index.ts'
+generates:
+  ./src/graphql/generated.ts:
+    plugins:
+      - add:
+          content: '/* eslint-disable */'
+      - typescript
+      - typescript-resolvers

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "dev": {
+      "dependsOn": ["generate:watch"],
+      "cache": false
+    },
+    "generate:watch": {
+      "cache": false
+    },
+    "generate": {
+      "cache": false
+    }
+  }
+}
